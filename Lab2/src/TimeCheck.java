@@ -129,7 +129,7 @@ public class TimeCheck{
         Time t = new Time(10, 5, 0);
         System.out.println(t.toStandard());
         System.out.println(t.toUniversal());
-        Time t2 = new Time(2, 5, 4);
+        Time t2 = new Time(20, 5, 4);
         t.add(t2);
         System.out.println(t.toStandard());
         System.out.println(t.toUniversal());
