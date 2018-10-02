@@ -19,7 +19,8 @@ public class Employee extends Person {
         this.insuranceNumber = insuranceNumber;
     }
 
-    public boolean equals(Employee e) {
+    public boolean equals(Object obj) {
+        Employee e = (Employee)obj;
         return (super.equals(e) &&
                 this.salary == e.salary && this.year == e.year &&
                 this.insuranceNumber.equals(e.insuranceNumber));

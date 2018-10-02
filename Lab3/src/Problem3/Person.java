@@ -14,7 +14,8 @@ public class Person {
         this.age = age;
     }
 
-    public boolean equals(Person p) {
+    public boolean equals(Object obj) {
+        Person p = (Person)obj;
         return (this.age == p.age && this.name.equals(p.name));
     }
 
