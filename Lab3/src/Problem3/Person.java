@@ -15,8 +15,11 @@ public class Person {
     }
 
     public boolean equals(Object obj) {
-        Person p = (Person)obj;
-        return (this.age == p.age && this.name.equals(p.name));
+        if(obj instanceof Person) {
+            Person p = (Person) obj;
+            return (this.age == p.age && this.name.equals(p.name));
+        }
+        return false;
     }
 
     public String toString() {

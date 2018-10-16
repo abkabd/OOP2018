@@ -21,11 +21,16 @@ public class Manager extends Employee{
         team.add(e);
     }
 
+    @Override
     public boolean equals(Object obj) {
-        Manager m = (Manager)obj;
-        return (super.equals(m) && this.team.equals(m.team) && this.bonus == m.bonus);
+        if(obj instanceof Manager) {
+            Manager m = (Manager) obj;
+            return (super.equals(m) && this.team.equals(m.team) && this.bonus == m.bonus);
+        }
+        return false;
     }
 
+    @Override
     public String toString() {
         String tm = "----------\n";
         for(Employee e: this.team){

@@ -20,10 +20,13 @@ public class Employee extends Person {
     }
 
     public boolean equals(Object obj) {
-        Employee e = (Employee)obj;
-        return (super.equals(e) &&
-                this.salary == e.salary && this.year == e.year &&
-                this.insuranceNumber.equals(e.insuranceNumber));
+        if(obj instanceof Employee) {
+            Employee e = (Employee) obj;
+            return (super.equals(e) &&
+                    this.salary == e.salary && this.year == e.year &&
+                    this.insuranceNumber.equals(e.insuranceNumber));
+        }
+        return false;
     }
 
     public String toString() {
