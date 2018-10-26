@@ -24,11 +24,17 @@ public class Manager extends Employee implements Comparable{
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == this) return true;
         if(obj instanceof Manager) {
             Manager m = (Manager) obj;
             return (super.equals(m) && this.team.equals(m.team) && this.bonus == m.bonus);
         }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return 17*31*(int)bonus + team.hashCode() + super.hashCode();
     }
 
     @Override

@@ -1,5 +1,7 @@
 package Problem3;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private int age;
@@ -16,11 +18,17 @@ public class Person {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == this) return true;
         if(obj instanceof Person) {
             Person p = (Person) obj;
             return (this.age == p.age && this.name.equals(p.name));
         }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return 17*31*age+name.hashCode();
     }
 
     @Override

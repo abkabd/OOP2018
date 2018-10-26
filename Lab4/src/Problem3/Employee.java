@@ -23,6 +23,7 @@ public class Employee extends Person implements Comparable, Cloneable {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == this) return true;
         if(obj instanceof Employee) {
             Employee e = (Employee) obj;
             return (super.equals(e) &&
@@ -30,6 +31,11 @@ public class Employee extends Person implements Comparable, Cloneable {
                     this.insuranceNumber.equals(e.insuranceNumber));
         }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return 17*31*(int)salary + insuranceNumber.hashCode() + hireDate.hashCode() + super.hashCode();
     }
 
     @Override
