@@ -52,16 +52,10 @@ public class Employee extends Person implements Comparable, Cloneable {
     }
 
     @Override
-    public Employee clone(){
-        try {
-            Employee e = (Employee) super.clone();
-            e.salary = salary;
-            e.hireDate = hireDate;
-            e.insuranceNumber = insuranceNumber;
-            return e;
-        }
-        catch (CloneNotSupportedException ex){
-            throw new InternalError();
-        }
+    public Employee clone() {
+        Employee e = (Employee) super.clone();
+        e.hireDate = hireDate;
+        e.insuranceNumber = insuranceNumber;
+        return e;
     }
 }

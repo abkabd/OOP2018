@@ -2,7 +2,7 @@ package Problem3;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Cloneable{
     private String name;
     private int age;
 
@@ -14,6 +14,18 @@ public class Person {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    @Override
+    public Person clone(){
+        try{
+            Person p = (Person)super.clone();
+            p.name = name;
+            return p;
+        }catch (CloneNotSupportedException ex){
+            System.out.println("Error");
+            throw new InternalError();
+        }
     }
 
     @Override

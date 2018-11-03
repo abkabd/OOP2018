@@ -63,7 +63,6 @@ public class Manager extends Employee implements Comparable{
     public Manager clone(){
         Manager m = (Manager) super.clone();
         m.team = team;
-        m.bonus = bonus;
         return m;
     }
 

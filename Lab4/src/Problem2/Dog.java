@@ -7,7 +7,6 @@ public class Dog extends Mammal implements Actionable, Barkable{
         this.type = type;
     }
 
-
     public String type() {
         return this.type;
     }
@@ -19,4 +18,5 @@ public class Dog extends Mammal implements Actionable, Barkable{
     public String getAction() {
         return Actionable.action;
     }
+
 }
