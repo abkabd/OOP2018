@@ -1,0 +1,20 @@
+Username: root
+Password: 3506433
+
+Sun Nov 11 10:38:45 ALMT 2018 admin logged into a system
+Sun Nov 11 10:39:26 ALMT 2018 admin added new instructor "Askar, Akshabayev"
+Sun Nov 11 10:40:06 ALMT 2018 admin added new textbook "1000_ALgorithms, bestAuthor"
+Sun Nov 11 10:40:06 ALMT 2018 admin added new course "Course: Algo Teacher: Askar, Akshabayev Book: 1000_ALgorithms, bestAuthor"
+Sun Nov 11 10:49:49 ALMT 2018 admin logged into a system
+Sun Nov 11 10:50:40 ALMT 2018 admin added new instructor "Bekenova, Raykhan"
+Sun Nov 11 10:51:08 ALMT 2018 admin added new textbook "RusForBRB, SomeDude"
+Sun Nov 11 10:51:08 ALMT 2018 admin added new course "Course: Russian Teacher: Bekenova, Raykhan Book: RusForBRB, SomeDude"
+Fri Nov 16 11:07:52 ALMT 2018 admin logged into a system
+Fri Nov 16 11:56:22 ALMT 2018 admin logged into a system
+Fri Nov 16 11:57:09 ALMT 2018 admin added new instructor "Bekenova, Raykhan"
+Fri Nov 16 11:57:29 ALMT 2018 admin added new textbook "Iskerlik, abc"
+Fri Nov 16 11:57:29 ALMT 2018 admin added new course "Course: Kazakh Teacher: Bekenova, Raykhan Book: Iskerlik, abc"
+Sat Nov 17 16:37:26 ALMT 2018 admin logged into a system
+Sat Nov 17 16:38:53 ALMT 2018 admin added new instructor "Bobur, Mukhsimbaev"
+Sat Nov 17 16:39:19 ALMT 2018 admin added new textbook "OOP, Shamoi"
+Sat Nov 17 16:39:19 ALMT 2018 admin added new course "Course: OOP Teacher: Bobur, Mukhsimbaev Book: OOP, Shamoi"
